@@ -14,6 +14,7 @@ const __dirname = dirname(__filename);
 
 // serve static files
 app.use(express.static(path.join(__dirname, "public")));
+app.get("/story", (req, res) => { res.sendFile(path.join(__dirname, "public", "storytelling.html")); });
 
 // API routes
 app.use("/api", apiRoutes);
