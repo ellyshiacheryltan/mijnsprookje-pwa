@@ -1,0 +1,1026 @@
+/* General body settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Background image */
+body {
+    background-image: url('/public/pictures/Scherm_afbeelding\ 2024-11-07\ om\ 11.18.55-1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header container for buttons and logo */
+#genres-section .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Logo */
+#genres-section .logo {
+    width: 220px;
+}
+
+/* Style for round navigation buttons */
+#genres-section .round-nav {
+    background: #b71c1c;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#genres-section .round-nav:hover {
+    background: #a21717;
+}
+
+/* Title */
+#genres-section h1 {
+    color: #b71c1c;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: "Marhey", sans-serif;
+    font-weight: 100;
+}
+
+/* Genres Section Styling */
+#genres-section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Grid layout for genre buttons */
+#genres-section .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+    font-family: "Marhey", sans-serif;
+}
+
+/* Knop wrapper for genre buttons */
+#genres-section .knop-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b39f73;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    height: 160px;
+    border: solid 3px #a21717;
+    padding: 4px;
+    overflow: hidden;
+}
+
+/* Genre button */
+#genres-section .knop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    width: 190px;
+    clip-path: polygon(23% 0%, 77% 0%, 100% 25%, 100% 75%, 77% 100%, 23% 100%, 0% 75%, 0% 25%);
+    background-color: #ff7043; /* Default color */
+    color: white;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Icon styling */
+#genres-section .icon {
+    width: 60px;
+    height: auto;
+}
+
+/* Specific button styles for different genres */
+#genres-section .knop-avontuur { background-color: #e53935; }
+#genres-section .knop-liefde { background-color: #ff7043; }
+#genres-section .knop-griezelig { background-color: #42a5f5; }
+#genres-section .knop-droevig { background-color: #66bb6a; }
+#genres-section .knop-magie { background-color: #ffca28; }
+#genres-section .knop-grappig { background-color: #ec407a; }
+
+/* Hover effects for buttons */
+#genres-section .knop:hover {
+    transform: scale(1.05);
+    background-color: #d94e34;
+}
+
+/* Next button styling */
+#genres-section .next-knop {
+    display: inline-block;
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 28px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/* Responsive Layout for Tablets */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    #genres-section .grid {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    #genres-section .knop-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+    #genres-section .knop {
+        width: 200px;
+        height: 200px;
+    }
+    #genres-section .next-knop {
+        font-size: 45px;
+        padding: 15px 130px;
+    }
+
+    #genres-section h1 {
+        font-size: 45px;
+    }
+
+    #genres-section .logo  {
+        width: 209px;
+        margin-top: 85px;
+    }
+
+    #genres-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 30px;
+        border: none;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Layout for Phones */
+@media (max-width: 480px) {
+    #genres-section .grid {
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 10px; 
+        justify-items: center; 
+        align-items: center; 
+        width: 100%;
+        margin: auto;
+    }
+
+    #genres-section .knop-wrapper {
+        width: 150px; 
+        height: 150px;
+    }
+
+    #genres-section .knop {
+        width: 130px; 
+        height: 130px;
+        font-size: 14px; 
+    }
+
+    #genres-section .next-knop {
+        font-size: 22px;
+        padding: 10px 50px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #genres-section .icon {
+        width: 70px; 
+        height: auto; 
+    }
+
+    #genres-section h1 {
+        font-size: 45px;
+    }
+
+    #genres-section .logo  {
+        width: 209px;
+        margin-top: 85px;
+    }
+
+    #genres-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 30px;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin-bottom: 99px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+}
+
+
+
+
+/* Responsive Grid layout for phone */
+@media (max-width: 758px) {
+    
+    #genres-section .grid {
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 10px; 
+        justify-items: center; 
+        align-items: center; 
+        width: 100%;
+        margin: auto;
+    }
+
+    #genres-section .knop-wrapper {
+        width: 150px; 
+        height: 150px;
+    }
+
+    #genres-section .knop {
+        width: 130px; 
+        height: 130px;
+        font-size: 14px; 
+    }
+
+    #genres-section .next-knop {
+        font-size: 35px;
+        padding: 5px 70px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #genres-section .icon {
+        width: 70px; 
+        height: auto; 
+    }
+
+    #genres-section h1 {
+        font-size: 45px;
+    }
+
+    #genres-section .logo  {
+        width: 230px;
+        margin-top: 15px;
+    }
+
+    #genres-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 30px;
+        border: none;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 14px;
+    }
+   
+}
+
+
+
+
+/* Achtergrondafbeelding alleen voor de personagesgood sectie */
+#personagesgood-section {
+    background-image: url('Scherm­afbeelding 2024-11-07 om 11.18.55.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* Header container voor knoppen en logo */
+#personagesgood-section .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Logo */
+#personagesgood-section .logo {
+    width: 220px;
+}
+
+/* Stijl voor ronde navigatieknoppen */
+#personagesgood-section .round-nav {
+    background: #b71c1c;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Titel */
+#personagesgood-section .header-text {
+    text-align: center; 
+    font-family: "Marhey", sans-serif;
+    margin: 20px 0;
+}
+
+/* Opmaak voor de hoofdtekst */
+#personagesgood-section .header-text p {
+    font-size: 2.3rem; 
+    line-height: 1.2; 
+    color: #B71134;
+    margin: 0; 
+}
+
+/* Specifieke opmaak voor de subtekst */
+#personagesgood-section .header-text .subtext {
+    font-size: 1.9rem; 
+    font-weight: lighter; 
+    color:#771A2D;
+    margin-top: 10px; 
+}
+
+#personagesgood-section .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    justify-items: center;
+    align-items: center;
+    width: 90%; 
+    margin: 0 auto 20px; 
+}
+
+/* Knop wrapper */
+#personagesgood-section .knop-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b39f73; 
+    border-radius: 12px; 
+    border: 3px solid #b71c1c; 
+    width: 127px; 
+    height: 127px; 
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Knop stijl */
+#personagesgood-section .knop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Icon style */
+#personagesgood-section .icon {
+    width: 90px; /* Breedte van de iconen */
+    height: auto;
+}
+
+
+#personagesgood-section .next-knop-container {
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;               
+    margin-top: 30px;          
+}
+
+#personagesgood-section .next-knop {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;       
+}
+@media (max-width: 768px) {
+    #personagesgood-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 12px; 
+    }
+
+    #personagesgood-section .knop-wrapper {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #personagesgood-section .icon {
+        width: 190px; 
+    }
+
+    #personagesgood-section .icon {
+        width: 184px; /* Middelgrote iconen */
+        margin-top: 27px;
+    }
+
+   
+
+ 
+}
+
+/* Responsieve styling voor telefoons */
+@media (max-width: 480px) {
+    #personagesgood-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px; 
+    }
+
+    #personagesgood-section .knop-wrapper {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #personagesgood-section .icon {
+        width: 194px;
+        margin-top: 20px;
+    }
+
+    #personagesgood-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 30px;
+        border: none;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 60px;
+    }
+
+    #personagesgood-section .logo {
+        width: 209px;
+        margin-top: 35px;
+    }
+}
+
+
+
+/* Responsieve styling voor iPad Pro, Air, en Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #personagesgood-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+    }
+
+    #personagesgood-section .knop-wrapper {
+        width: 190px; 
+        height: 190px;
+        border-radius: 20px;
+        border: 4px  solid #B71134;
+    }
+
+    #personagesgood-section .icon {
+        width: 210px; /* Middelgrote iconen */
+        margin-top: 10px;
+    }
+
+    #personagesgood-section .round-nav {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+    }
+
+    #personagesgood-section .header-text p {
+        font-size: 3.2rem; 
+    }
+
+    #personagesgood-section .header-text .subtext {
+        font-size: 3rem;
+    }
+
+    #personagesgood-section .next-knop {
+        padding: 12px 140px;
+        font-size: 45px; 
+    }
+
+    #personagesgood-section .logo {
+        width: 355px; 
+        margin-top: 20px;
+    }
+
+    #personagesgood-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 56px;
+        border: none;
+        border-radius: 50%;
+        width: 99px;
+        height: 99px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 60px;
+    }
+
+
+    #personagesgood-section .icon {
+        width: 346px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    #personagesgood-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 25px;
+    }
+
+    #personagesgood-section .knop-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+
+    #personagesgood-section .icon {
+        width: 100px; 
+    }
+
+    #personagesgood-section .header-text p {
+        font-size: 4.4rem; 
+    }
+
+    #personagesgood-section .header-text .subtext {
+        font-size: 4rem;
+    }
+
+    #personagesgood-section .next-knop {
+        padding: 6px 130px;
+        font-size: 62px; 
+    }
+
+    #personagesgood-section .logo {
+        width: 390px; 
+        margin-top: 50px;
+    }
+
+    #personagesgood-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 55px;
+        border: none;
+        border-radius: 50%;
+        width: 159px;
+        height: 159px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 70px;
+    }
+
+    #personagesgood-section .icon {
+        width: 500px; /* Middelgrote iconen */
+        margin-top: 80px;
+    }
+}
+
+
+
+
+/* Specifieke styling voor de iPhone 14 Pro Max */
+@media screen and (device-width: 430px) and (device-height: 932px) and (orientation: portrait) {
+    #personagesgood-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+    }
+
+    #personagesgood-section .knop-wrapper {
+        width: 90px;
+        height: 90px;
+        padding: 5px;
+    }
+
+    #personagesgood-section .icon {
+        width: 190px;
+    }
+
+    #personagesgood-section .header-text p {
+        font-size: 2.2rem;
+    }
+
+    #personagesgood-section .header-text .subtext {
+        font-size: 2.0rem;
+    }
+
+    #personagesgood-section .next-knop {
+        font-size: 28px;
+        padding: 10px 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#ba-section {
+    background-image: url('Scherm­afbeelding 2024-11-07 om 11.18.55.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* Header container voor knoppen en logo */
+#ba-section .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Logo */
+#ba-section .logo {
+    width: 220px;
+}
+
+/* Stijl voor ronde navigatieknoppen */
+#ba-section .round-nav {
+    background: #b71c1c;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Titel */
+#ba-section .header-text {
+    text-align: center; 
+    font-family: "Marhey", sans-serif;
+    margin: 20px 0;
+}
+
+/* Opmaak voor de hoofdtekst */
+#ba-section .header-text p {
+    font-size: 2.3rem; 
+    line-height: 1.2; 
+    color: #B71134;
+    margin: 0; 
+}
+
+/* Specifieke opmaak voor de subtekst */
+#ba-section .header-text .subtext {
+    font-size: 1.9rem; 
+    font-weight: lighter; 
+    color:#771A2D;
+    margin-top: 10px; 
+}
+
+#ba-section .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; 
+    justify-items: center;
+    align-items: center;
+    width: 90%; 
+    margin: 0 auto 20px; 
+}
+
+/* Knop wrapper */
+#ba-section .knop-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b39f73; 
+    border-radius: 12px; 
+    border: 3px solid #b71c1c; 
+    width: 120px; 
+    height: 120px; 
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Knop stijl */
+#ba-section .knop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Icon style */
+#ba-section .icon {
+    width: 90px; 
+    height: auto;
+}
+
+/* Container voor de 'Verder gaan' knop */
+#ba-section .next-knop-container {
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;              
+    margin-top: 30px;          
+}
+
+#ba-section .next-knop {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;        
+}
+
+/* Responsieve styling voor kleinere schermen */
+@media (max-width: 768px) {
+    #ba-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 12px; 
+    }
+
+    #ba-section .knop-wrapper {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #ba-section .icon {
+        width: 190px; 
+    }
+
+    #ba-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 30px;
+        border: none;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 60px;
+    }
+
+    #ba-section .logo {
+        width: 209px;
+        margin-top: 35px;
+    }
+
+    #ba-section .icon {
+        width: 180px; /* Breedte van de iconen */
+        height: auto;
+    }
+    
+}
+
+/* Responsieve styling voor grotere schermen (bijvoorbeeld tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #ba-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+    }
+
+    #ba-section .knop-wrapper {
+        width: 190px; /* Middelgrote knoppen voor iPad */
+        height: 190px;
+        border-radius: 20px;
+        border: 4px  solid #B71134;
+    }
+
+    #ba-section .icon {
+        width: 210px; 
+        margin-top: 10px;
+    }
+
+    #ba-section .round-nav {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+    }
+
+    #ba-section .header-text p {
+        font-size: 3.2rem; 
+    }
+
+    #ba-section .header-text .subtext {
+        font-size: 3rem;
+    }
+
+    #ba-section .next-knop {
+        padding: 12px 140px;
+        font-size: 45px; 
+    }
+
+    #ba-section .logo {
+        width: 355px; 
+        margin-top: 20px;
+    }
+    
+
+  
+     
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    #ba-section .grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 25px;
+    }
+
+    #ba-section .knop-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+
+    #ba-section .icon {
+        width: 100px; 
+    }
+
+    #ba-section .header-text p {
+        font-size: 4.4rem; 
+    }
+
+    #ba-section .header-text .subtext {
+        font-size: 4rem;
+    }
+
+    #ba-section .next-knop {
+        padding: 6px 130px;
+        font-size: 62px; 
+    }
+
+    #ba-section .logo {
+        width: 390px; 
+        margin-top: 50px;
+    }
+
+    #ba-section .round-nav {
+        background: #b71c1c;
+        color: white;
+        font-size: 55px;
+        border: none;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 70px;
+    }
+
+    #ba-section .icon {
+        width: 900px; 
+        height: auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
