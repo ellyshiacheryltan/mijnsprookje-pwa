@@ -81,7 +81,7 @@ const storyContainerElem = document.getElementById("story");
 let generateText = async (prompt) => {
   try {
     // send request to API route in the server (app.js)
-    const response = await fetch("/generate-text", {
+    const response = await fetch("/api/generate-text", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -107,7 +107,7 @@ let generateText = async (prompt) => {
 let generateImages = async (prompts) => {
   try {
     // send request to API route in the server (app.js)
-    const response = await fetch("/generate-image", {
+    const response = await fetch("/api/generate-image", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -125,11 +125,13 @@ let generateImages = async (prompts) => {
     // create img element for each images and display in HTML document
     data.images.forEach((imageUrl) => {
       const imgElem = document.createElement("img");
-      imgElem.src = imageUrl;
+      imgElem.src = `/assets/generated-images/${imageUrl}`;
       imgElem.style.width = "300px";
       imgElem.style.margin = '20px';
   
       storyContainerElem.appendChild(imgElem);
+
+      console.log(imgElem.src);
     });
   } catch (error) {
     console.error("Error:", error.message);
