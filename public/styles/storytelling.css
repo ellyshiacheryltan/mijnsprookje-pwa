@@ -11,8 +11,11 @@ body, html {
 }
 
 /* Background image */
+
+
+
 body {
-    background-image: url('/public/pictures/Scherm_afbeelding\ 2024-11-07\ om\ 11.18.55-1.png');
+    background-image: url('/pictures/Scherm_afbeelding\ 2024-11-07\ om\ 11.18.55-1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -96,6 +99,7 @@ body {
     border: solid 3px #a21717;
     padding: 4px;
     overflow: hidden;
+    transition: background-color 0.1s ease-in-out;
 }
 
 /* Genre button */
@@ -129,11 +133,8 @@ body {
 #genres-section .knop-magie { background-color: #ffca28; }
 #genres-section .knop-grappig { background-color: #ec407a; }
 
-/* Hover effects for buttons */
-#genres-section .knop:hover {
-    transform: scale(1.05);
-    background-color: #d94e34;
-}
+
+
 
 /* Next button styling */
 #genres-section .next-knop {
@@ -333,7 +334,7 @@ body {
 
 /* Achtergrondafbeelding alleen voor de personagesgood sectie */
 #personagesgood-section {
-    background-image: url('Scherm­afbeelding 2024-11-07 om 11.18.55.png');
+    background-image: url('/pictures/Scherm_afbeelding\ 2024-11-07\ om\ 11.18.55-1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -686,7 +687,7 @@ body {
 
 
 #ba-section {
-    background-image: url('Scherm­afbeelding 2024-11-07 om 11.18.55.png');
+    background-image: url('/pictures/Scherm_afbeelding\ 2024-11-07\ om\ 11.18.55-1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
