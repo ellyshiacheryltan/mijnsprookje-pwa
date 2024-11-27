@@ -970,6 +970,326 @@ body {
 
 
 
+/* ------------------------------------------------------ */
+
+/* FONTS */
+@font-face {
+    font-family: 'alconica';
+    src: url('../fonts/Aclonica-Regular.woff') format('woff');
+    src: url('../fonts/Aclonica-Regular.woff2') format('woff2');
+}
+
+
+/* General Styling */
+.verhaal-section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    background-image: url("pictures/Sprookjesheld.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.container {
+    width: 375px; /* Mobile-first design */
+    /* background: #FFF; */
+    border-radius: 16px;
+    padding: 16px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "alconica";
+
+}
+
+/* Settings Button */
+.settings-btn {
+    /* position: absolute; */
+    position: relative;
+    top: 7px;
+    /* right: 16px; */
+    left: 200px;
+    background-color: #B71134;
+    border: none;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.settings-btn img {
+    width: 37px;
+    height: 37px;
+}
+
+.verhaal-back-button img{
+    width: 37px;
+    height: 37px;
+}
+
+/* Logo Section */
+.logo img {
+    /* margin: 10px; */
+    margin-top: -15px;
+    margin-bottom: 70px;
+    max-width: 85%;
+}
+
+/* Generated Content */
+.content {
+    width: 100%;
+    text-align: center;
+    scale: 1.2;
+
+}
+
+.generated-text {
+    font-size: 22px;
+    max-width: 70vw;
+    text-align: left;
+    margin: 25px 0;
+    margin-left: 20px;
+}
+
+.generated-image{
+    width: 95%;
+    background-color: #B39F73;
+    border: 3.5px solid #C03131;
+    border-radius: 20px;
+    margin-left: 6.5px;
+
+}
+
+.generated-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+/* User Choices */
+.user-choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.choice-full{
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.choice {
+    margin: 10px;
+    align-content: center;
+    height: 150px;
+    background-color: #B39F73;
+    border: 3.5px solid #C03131;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.choice img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.choice-full p {
+    /* font-size: 25px; */
+    margin-top: 4px;
+    color: #771A2D;
+}
+
+/* Stop Button */
+.stop-btn-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.stop-btn {
+    background-color: #B71134;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stop-btn img {
+    width: 33px;
+    height: 33px;
+}
+
+.stop-btn-container p {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+/* Final Output */
+.final-output {
+    width: 95%;
+    text-align: center;
+    scale: 1.25;
+}
+
+.final-output img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+    /* margin: 8px 0; */
+}
+
+
+.final-output p {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Character Section */
+.character-section {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: transform 3s ease;
+    transform: scale(1);
+}
+
+
+.character-image {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.talk-button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.talk-btn {
+    background-color: #B71134;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: 16px;
+    cursor: pointer;
+
+}
+
+.talk-btn img {
+    width: 43px;
+    height: 47px;
+    margin-top: 3px;
+}
+
+#mic-text {
+    font-size: 17px;
+    margin-top: 15px;
+    color: #B71134;
+    font: ;
+}
+
+.verhaal-section a img{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #B71134;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+p{
+    color: #771A2D;
+}
+
+
+.generated-text{
+    color: #771A2D;
+}
+
+
+#save-story-question{
+    font-size: 22px;
+    color: #771A2D;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* align-content: center; */
+    margin-bottom: 20px;
+}
+
+.save-story{
+    margin-left: 12px;
+}
+
+/* YES-NO SECTION */
+.yes-no{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.yes-no img{
+    width: 90px;
+    background-color: #B71134;
+    border: none;
+    border-radius: 40%;
+    padding: 20px;
+    margin: 40px;
+    /* width: 70px; */
+    /* height: 70px; */
+}
+
+.yes-no #thumbs-down{
+    transform: rotate(180deg);
+    
+}
+
+
+
+
 
 
 

@@ -267,34 +267,115 @@
 </section>
 
 
-<section id="verhaal-section">
-  <h1>the display of ai </h1>
-  </section>
+
+
+
+    <!-- --------------------------------------------------------------- -->
 
 
 
 
-  <section id="choices-section">
-   <h1>choices</h1>
-</section>
+    <section id="verhaal-section">
+        <div class="container">
+            <!-- Settings Button -->
+            <button class="settings-btn">
+            <img src="pictures/setting.png" alt="Settings">
+        </button>
+
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="pictures/logo.png" alt="Website Logo">
+            </div>
+
+            <!-- AI Generated Content -->
+            <div class="content">
+                <!-- Generated Text -->
+                <p id="generated-text" class="generated-text">
+                    <!-- Placeholder for AI-generated text -->
+                    Roodkapje is op weg naar haar oma.
+                </p>
+
+                <!-- Generated Image -->
+                <div class="generated-image">
+                    <img src="pictures/placeholder-image.png" alt="AI Generated Illustration">
+                </div>
 
 
+                <!-- AI Question -->
+                <p id="question-text" class="generated-text">
+                    <!-- Placeholder for AI-generated question -->
+                    Roodkapje neemt een mand met koekjes.
+                </p>
 
-<section id="choices-section">
-    <h1>talk</h1>
- </section>
+                <!-- User Choices -->
+                <div class="user-choices">
+                    <!-- Option 1 -->
+                    <div class="choice-full">
+                        <div class="choice">
+                            <img src="pictures/choice1.png" alt="Choice 1">
+                        </div>
+                        <p>Choice 1 Explanation</p>
+                    </div>
 
 
- <section id="choices-section">
-    <h1>savethestory</h1>
- </section>
-  
-  
+                    <!-- Option 2 -->
+                    <div class="choice-full">
+                        <div class="choice">
+                            <img src="pictures/choice2.png" alt="Choice 2">
+                        </div>
+                        <p>Choice 2 Explanation</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stop Generating Button -->
+            <div class="stop-btn-container">
+                <button class="stop-btn">
+                    <img src="pictures/stop-icon.png" alt="Stop">
+                </button>
+                <p>Stop</p>
+            </div>
+
+            <!-- Generated Result -->
+            <div class="final-output hidden">
+                <!-- Final Image and Text -->
+                <div class="generated-image">
+                    <img src="pictures/placeholder-image.png" alt="Final AI Image" class="final-image">
+                </div>
+                <p class="final-text">Result based on user choice</p>
+            </div>
+
+            <!-- Character Section -->
+            <div class="character-section hidden">
+                <img src="pictures/character-image1.png" alt="Character" class="character-image">
+                <div class="talk-button">
+                    <button class="talk-btn">
+                        <img src="pictures/mic.png" alt="Microphone">
+                    </button>
+                </div>
+                <p id="mic-text">Praat hier</p>
+            </div>
 
 
+            <!-- SAVE STORY? -->
+            <div id="save-story-question">
+                <h2 class="save-story">Verhaal bewaren?</h1>
+            </div>
 
+            <div class="content">
+                <div class="generated-image">
+                    <img src="pictures/placeholder-image.png" alt="save-image">
+                </div>
+            </div>
 
+            <section class="yes-no">
+                <img src="pictures/thumbs-up.png" alt="thumbs-up">
+                <img src="pictures/thumbs-up.png" id="thumbs-down">
+            </section>
 
+        </div>
+    </section>
 
 
 
@@ -377,11 +458,29 @@
         switchSection('ba-section', 'personagesgood-section');
     });
 
-    // Switch naar Verhaal sectie vanuit BA
-    document.getElementById('go-to-verhaal').addEventListener('click', (e) => {
-        e.preventDefault();
-        switchSection('ba-section', 'verhaal-section'); // Verander hier de juiste sectie ID
-    });
+        // Switch naar Verhaal sectie vanuit BA
+        document.getElementById('go-to-verhaal').addEventListener('click', (e) => {
+            e.preventDefault();
+            switchSection('ba-section', 'verhaal-section'); // Verander hier de juiste sectie ID
+        });
+
+
+
+        // --------------------------------------------------------------------
+
+        // Event listener for the back button in "Verhaal" section to return to "BA" section
+        document.getElementById('back-to-BAD').addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            switchSection('verhaal-section', 'ba-section'); // Switch sections
+        });
+
+        // Event listener for the Stop button in the "Verhaal" section
+        document.querySelector('.stop-btn').addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default action if necessary
+            switchSection('verhaal-section', 'choices-section'); // Switch from "Verhaal" to "Choices" section
+        });
+
+
 
     // Voeg eventlisteners toe aan knoppen met een data-name attribuut
     document.querySelectorAll('.knop[data-name]').forEach(button => {
