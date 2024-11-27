@@ -22,7 +22,7 @@ export const generateImage = async (req, res) => {
 
     // iterate through array of prompts
     for (const [index, prompt] of prompts.entries()) {
-      const input = { prompt };
+      const input = { prompt, aspect_ratio: "3:2" };
 
       // run image generating model with Replicate's API
       const output = await replicate.run("black-forest-labs/flux-schnell", {
@@ -31,7 +31,8 @@ export const generateImage = async (req, res) => {
 
       // save each generated image
       for (const [subIndex, item] of output.entries()) {
-        const filePath = path.join(__dirname,
+        const filePath = path.join(
+          __dirname,
           "../public/assets/generated-images",
           `/output_${index}_${subIndex}.webp`
         );
