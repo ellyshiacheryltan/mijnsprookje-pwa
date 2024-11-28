@@ -370,3 +370,39 @@ document.getElementById("go-to-verhaal").addEventListener("click", (e) => {
 
   startStory();
 });
+
+// ------------------------ Colour changing button elements ------------------------ //
+
+//Buttons Genre, Bad/Good Characters background color changes
+document.addEventListener('DOMContentLoaded', function () {
+  // Selecteer every button
+  const buttons = document.querySelectorAll('.knop');
+
+  // Select random colour function
+  function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+  }
+
+  buttons.forEach(button => {
+      button.addEventListener('click', function () {
+          // Reset colours after a new click
+          document.querySelectorAll('.knop-wrapper').forEach(wrapper => {
+              wrapper.style.backgroundColor = ''; 
+          });
+
+         
+          const randomColor = getRandomColor();
+
+          // Older wrapper (parent) changer
+          const parentWrapper = this.closest('.knop-wrapper');
+          if (parentWrapper) {
+              parentWrapper.style.backgroundColor = randomColor; 
+          }
+      });
+  });
+});
