@@ -1,13 +1,15 @@
-import Replicate from "replicate";
 import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { writeFile } from "node:fs/promises";
+import Replicate from "replicate";
+import dotenv from "dotenv";
+
+dotenv.config();
+const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN })
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
-const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN });
 
 export const generateImage = async (req, res) => {
   try {

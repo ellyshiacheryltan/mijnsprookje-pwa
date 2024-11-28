@@ -1,6 +1,8 @@
 import Replicate from "replicate";
+import dotenv from "dotenv";
 
-const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN });
+dotenv.config();
+const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN })
 
 export const generateText = async (req, res) => {
   try {
@@ -13,10 +15,9 @@ export const generateText = async (req, res) => {
     const input = {
       prompt,
       system_prompt: `You are a helpful, respectful, and honest narrator. Always answer as helpfully as 
-      possible, while being safe. Your stories should under any circumstances include violence, harmfull 
-      behaviour, sexual, racist or illegal activities. You are determined to narrate stories for young 
+      possible, while being safe. You are determined to narrate stories for young 
       kids aged 4-6 years-old so do not use techical or academic language. You start the story immediatelly 
-      without any additional comments or polite responses. It should be no longer than 5 words.`,
+      without any additional comments or polite responses.`,
     };
 
     // run text generation model with Replicate's API
