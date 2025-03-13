@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Mijn Sprookje</title>
+    <link rel="stylesheet" href="styles/storytelling.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="./js/manifest.json">
+</head>
+<body>
+    <!-- Section: Genres -->
+    <section id="genres-section" class="active">
+        <div class="header-container">
+            <a href="index.html" class="round-nav knop-terug">
+                <i class="fas fa-home"></i>
+            </a>
+            <img src="./assets/images/logo svglogo.png" alt="Efteling logo" class="logo">
+            <button class="round-nav knop-instellingen">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+        <h1>Kies je verhaal?</h1>
+        <div class="grid">
+            <!-- Eerste rij -->
+            <div class="knop-wrapper">
+                <div class="knop genre knop-avontuur" data-name="adventure" data-bg="#e53935">
+                    <img src="./assets/images/story-page/genres/avontuur.png" alt="Avontuur Icoon" class="icon">
+                    <span>Avontuur</span>
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop genre knop-liefde" data-name="friendship" data-bg="#ff7043">
+                    <img src="./assets/images/story-page/genres/lief.png" alt="Liefde Icoon" class="icon">
+                    <span>Liefde</span>
+                </div>
+            </div>
+        
+            <!-- Tweede rij -->
+            <div class="knop-wrapper">
+                <div class="knop genre knop-griezelig" data-name="spooky">
+                    <img src="./assets/images/story-page/genres/Bang.png" alt="Griezelig Icoon" class="icon">
+                    <span>Griezelig</span>
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop genre knop-droevig" data-name="sad">
+                    <img src="./assets/images/story-page/genres/droevig.png" alt="Droevig Icoon" class="icon">
+                    <span>Droevig</span>
+                </div>
+            </div>
+        
+            <!-- Derde rij -->
+            <div class="knop-wrapper">
+                <div class="knop genre knop-magie" data-name="magical">
+                    <img src="./assets/images/story-page/genres/magie.png" alt="Magie Icoon" class="icon">
+                    <span>Magie</span>
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop genre knop-grappig" data-name="funny">
+                    <img src="./assets/images/story-page/genres/grappig.png" alt="Grappig Icoon" class="icon">
+                    <span>Grappig</span>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="to-personagesgood" class="next-knop">Verder gaan</a>
+    </section>
+
+
+    <!-- Section: Good characters -->
+    <section id="personagesgood-section">
+        <div class="header-container">
+            <a href="#" class="round-nav knop-terug" id="back-to-genres">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="./assets/images/logo svglogo.png" alt="Efteling logo" class="logo">
+            <button class="round-nav knop-instellingen">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+        <div class="header-text">
+            <p>Wie wil jij als jouw</p>
+            <p>verhaalvriend?</p>
+            <p class="subtext">Kies je held hier!</p>
+        </div>
+
+        <div class="grid">
+            <!-- Eerste rij -->
+            <div class="knop-wrapper">
+                <div class="knop hero knop-roodkapje" 
+                data-name="red riding hood "
+                data-species="
+                Little Red Riding Hood is a 14-year-old girl with a bright and kind appearance. She has soft, dark brown hair that falls in gentle waves just past her shoulders, and a warm, welcoming smile that reflects her friendly and brave nature. Her most distinctive feature is her bright red cape with a deep hood, which has become her signature look. The red cape symbolizes not just her name, but her courage, and she always wears it, even when walking through the dangerous Fairytale Forest.
+                 She wears a simple yet charming outfit: a white blouse with short sleeves, a knee-length brown skirt, and sturdy brown shoes, perfect for walking through the forest. Over her blouse, she wears an apron, which she uses to collect cookies or flowers. Her cheerful personality shines through as she often picks flowers during her adventures.
+                 Little Red Riding Hood loves to sing as she strolls through the forest, and her favorite place in the Efteling is her grandmother’s cottage, where she feels safe. Despite her fear of the wolf and the witch, she remains a brave girl, always ready to help her grandmother and friends like Little Thumb. Her clothing and appearance reflect both her youthful innocence and inner strength."
+                data-gender="Female">
+               <img src="./assets/images/story-page/characters/700x610-roodkapje-profiel.png" alt="Roodkapje Icoon" class="icon">
+           </div>
+        </div>
+            <div class="knop-wrapper">
+                <div class="knop hero knop-pardoesvrouw" 
+                     data-name="Wizard Women "
+                     data-species="Pardijn is a young, vibrant sorceress of 15 Quintyears, known for her magical talents and adventurous spirit. She lives in the magnificent Palace of Hearts (Paleis Hartenhof), where she spends her days filled with joy, magic, and dancing. Pardijn is easily recognized by her enchanting pink outfit, adorned with fine details that reflect her cheerful and energetic personality. She completes her look with a sparkling wizard’s hat, symbolizing her magical powers and making her the perfect picture of a whimsical sorceress.
+                     Pardijn loves saving people and helping others with her magic, which makes her a beloved and admired figure in the Efteling. She enjoys Polle’s pancakes, cherishes the beauty of nature, and loves spending time with her friends Pardoes, Polle, and her father Pardulfus. Although she dislikes strict rules and is wary of strong sunlight that can burn her, Pardijn always remains optimistic. Her love for dancing and her boundless energy make her a radiant presence wherever she goes"
+                     data-gender="Female">
+                    <img src="./assets/images/story-page/characters/700x610-pardijn-profiel.png" alt="Pardoes Vrouw Icoon" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop hero knop-pardoesman" 
+                     data-name="Wizard  "
+                     data-species="Pardoes is a young wizard of 15 Quintyears, renowned for his courageous nature and remarkable talent for magic. He resides deep in the Fairytale Forest in the mystical Star Chamber (Sterrenkamer), a magical place where the starry sky inspires him to craft new spells. Pardoes has a kind heart and is driven by his desire to save people and assist them with his powerful magic.
+                     He wears an elegant, enchanting robe in deep colors like purple and gold, adorned with stars and magical symbols that emphasize his status as a wizard. His tall, pointed wizard’s hat is his most iconic accessory, often decorated with golden stars that seem to shimmer in the light. The hat not only completes his impressive look but also reflects the wisdom and power he holds, despite his young age. 
+                     Pardoes has a cheerful and energetic demeanor but is also determined and brave, especially when confronting black magic—his greatest fear. He loves Petemoei’s enchanted forest berry pie and has a strong dislike for stories without happy endings. His greatest skill lies in memorizing spells, a talent he effortlessly combines with his natural aptitude for magic. Pardoes is a loyal and inspiring wizard, beloved both in the Fairytale Forest and beyond."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-pardoes-profiel.png" alt="Pardoes Man Icoon" class="icon">
+                </div>
+            </div>
+            
+            <!-- Tweede rij -->
+            <div class="knop-wrapper">
+                <div class="knop hero knop-langnek" 
+                     data-name="Langnek"
+                     data-species="
+                     Longneck is a 50-year-old man with an exceptionally long neck, but he is not a giraffe – he is a human who stands out because of his height. His neck stretches high above everything, giving him a clear view and allowing his head to literally be in the clouds. He lives in the Fairytale Forest, enjoying the nature and animals around him. Longneck wears a medieval-inspired outfit: a red coat with golden details, beige trousers, and sturdy black boots. He enjoys picking apples from the tops of tall trees and is always ready to offer good advice to those in need. With his calm and friendly demeanor, he is a beloved figure, deeply connected to the world around him."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters//700x610-langnek-profiel.png" alt="Langnek Icoon" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop hero knop-dwerg" 
+                     data-name="Dwerg  "
+                     data-species="Dwarf, 
+                     Gnome Keu is a 161-year-old gnome who lives in a cozy mushroom house. He loves a handful of musical notes but dislikes climbing scales. Although he’s afraid of off-key notes, he’s a true virtuoso on the piano. His favorite spot in the Efteling is the open-air theater in the Fairytale Forest, where he enjoys spending time with Ko, Ku, Ka, Ke, Kie, and Kei."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-keu-profiel.png" alt="Dwerg Icoon" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop hero knop-doorneroosje" 
+                     data-name="Princess "
+                     data-species="a little princess with beautiful long hair and a pink dress who lives in a castle with her mother."
+                     data-gender="Female">
+                    <img src="./assets/images/story-page/characters/700x610-assepoester-profiel.png" alt="Doorneroosje Icoon" class="icon">
+                </div>
+            </div>
+        
+            <!-- Derde rij -->
+            <div class="knop-wrapper">
+                <div class="knop hero knop-kleinduimpje" 
+                     data-name="Klein Duimpje"
+                     data-species="Klein Duimpje is a tiny human, the size of a thumb, wearing big shoes and an acorn cap on his head. 
+                                  He is clever and adventurous, loves leaving breadcrumb trails and outsmarting greedy giants. 
+                                  He lives in the Fairy Tale Forest (Sprookjesbos) in the Efteling, surrounded by nature and small creatures. 
+                                  His favorite foods are breadcrumbs, and he enjoys exploring and helping others. 
+                                  He dislikes running out of breadcrumbs and greedy giants. 
+                                  His greatest fear is getting lost in the forest or being caught by giants. 
+                                  Despite his small size, Klein Duimpje is super skilled at outsmarting giants, finding his way home, 
+                                  and giving wise advice. His favorite spot is near the giant's house in the forest. 
+                                  He spends his time with his family and small creatures in the forest."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-klein-duimpje-profiel.png" alt="Klein Duimpje Icoon" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop hero knop-geit" 
+                     data-name="Goat "
+                     data-species="
+                     Gnome Keu is a 161-year-old gnome who lives in a cozy mushroom house. He loves a handful of musical notes but dislikes climbing scales. Although he’s afraid of off-key notes, he’s a true virtuoso on the piano. His favorite spot in the Efteling is the open-air theater in the Fairytale Forest, where he enjoys spending time with Ko, Ku, Ka, Ke, Kie, and Kei."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-zeven-geitjes-profiel.png" alt="Geit Icoon" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop hero knop-ezel" 
+                     data-name="Ezel "
+                     data-species="
+                     Donkey is a cheerful and curious 30-year-old with soft gray fur and large ears. He lives in the Fairytale Forest, right in front of the Inn, but often finds himself stuck on a pedestal due to a witch's spell, which he doesn’t like at all. Donkey can poop golden coins and loves spending time with his donkey friends in the forest. Always up for an adventure, he enjoys the company of anyone who has a story to share."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-ezel-profiel.png" alt="Ezel Icoon" class="icon">
+                </div>
+            </div>
+        </div>
+        
+        <div class="next-knop-container">
+            <a href="#" id="to-ba" class="next-knop">Verder gaan</a>
+        </div>
+        
+    </section>
+    
+   
+    <!-- Section: Bad characters -->
+    <section id="ba-section">
+        <div class="header-container">
+            <a href="#" class="round-nav knop-terug" id="back-to-personagesgood">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="./assets/images/logo svglogo.png" alt="Efteling logo" class="logo">
+            <button class="round-nav knop-instellingen">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+        <div class="header-text">
+            <p>Wie wordt de slechterik  <p>
+            <p>in jouw verhaal?</p>
+            <p class="subtext">Kies hier je boef!</p>
+        </div>
+
+        <div class="grid">
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="giant"
+                     data-species="The Giant is very tall with a big belly, a bushy beard, and a grumpy face,
+                     but he always wears mismatched clothes that make him look a bit silly.
+                     The Giant is 45 years old and lives in the Fairytale Forest.
+                     He is very afraid of Tom Thumb. He loves to eat a whole table full of food—mmm!
+                     However, he really dislikes having cold feet and wants his boots back.
+                     The Giant is super good at snoring and enjoys spending time in a quiet spot in the forest where he can sleep.
+                     His favorite companion is his beloved boots!"
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-reus-profiel.png" alt="Reus" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Witch"
+                     data-species="The Witch is 88 years old and lives in her candy house in the middle of the Fairytale Forest.
+                     She isn’t afraid of anyone because she can enchant everyone with her magic.
+                     She loves eating little children—hehe! However, she dislikes growing old and wishes to stay young and beautiful forever.
+                     The Witch is super good at flying lightning-fast on her broomstick. Her favorite place in the Efteling is her own candy house.
+                     She enjoys spending time with the Wolf because together, they are truly wicked!  
+                     The Witch is thin and wrinkled, with sharp, piercing eyes and a long, crooked nose.
+                     She always wears a pointy black hat and a dark cloak, and her sly smile makes her look even more mischievous."
+                     data-gender="Female">
+                    <img src="./assets/images/story-page/characters/700x610-heks-profiel.png" alt="Heks" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Rattar"
+                     data-species="Rattar is very old, measured in many Quintyears, and lives in Zombor.
+                     He is afraid of angry land stewards but loves eating leftovers.
+                     He dislikes punishment and always tries to avoid it. Rattar is super good at stealing things without being noticed.
+                     His favorite place in the Efteling is inside the noble houses where his family works.
+                     He enjoys spending time with Pantagor, his master.  
+                     Rattar is small and sneaky, with quick, darting eyes and thin, wiry limbs.
+                     He wears tattered clothes that help him blend into the shadows, making it easy for him to stay unnoticed."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-rattar-profiel.png" alt="Rattar" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Draak"
+                     data-species="The Dragon is 62 years old and lives in its dragon cave.
+                     It is afraid of anyone who tries to steal its treasure.
+                     The Dragon doesn’t like eating because eating would distract it from guarding its precious hoard.
+                     It hates being alone and despises thieves who try to take its treasure.
+                     The Dragon is super good at protecting its treasure. Its favorite place in the Efteling is right next to the treasure.
+                     It enjoys spending time with the gnomes, who sometimes help keep an eye on the treasure.  
+                     The Dragon is massive, with glittering scales that shimmer in shades of green and gold.
+                     Its sharp claws and fiery eyes make it look fierce and ready to defend its treasure at any moment."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-draak-profiel.png" alt="Draak" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Pantagor"
+                     data-species="Pantagor is incredibly old, measured in countless Quintyears, and lives in Zombor.
+                     He fears no one and enjoys eating fireflies. However, he dislikes Pardoes and avoids any interaction with him.
+                     Pantagor is a master of dark magic and uses his skills to maintain his power. His favorite place in the Efteling is the underworld, where he feels most at home.
+                     He enjoys spending time with Rattar, his loyal companion.  
+                     Pantagor is tall and shadowy, with glowing red eyes and a menacing aura.
+                     His dark robes flow like smoke, and his hands crackle with magical energy, making him look both powerful and terrifying."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-pantagor-profiel.png" alt="Pantagor" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Wolf"
+                     data-species="The Wolf is 40 years old and lives in the bushes of the Fairytale Forest.
+                     He claims to fear no one, although he might be a little scared of the Witch sometimes.
+                     He loves eating Little Red Riding Hood and goats but absolutely hates vegetables—yuck!
+                     The Wolf thinks he is good at everything because he’s very clever and intelligent.
+                     His favorite spot in the Efteling is the forest path where Little Red Riding Hood picks flowers.
+                     He enjoys spending time with the Witch, plotting clever schemes together.  
+                     The Wolf is lean and cunning, with sharp teeth, piercing yellow eyes, and a bushy tail.
+                     He always has a sly grin on his face, making him look ready to pounce or trick someone at any moment"
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-wolf-profiel.png" alt="Wolf" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Almar"
+                     data-species="Grand Magister Almar is incredibly old, measured in countless Quintyears, and lives in his observatory.
+                     He is secretly afraid of Pantagor but hides it well. He loves eating Aliciana's Fairytale Forest Berry Pie, which is his absolute favorite treat.
+                     However, he dislikes Symbolicans who judge too quickly, believing in fairness and understanding.
+                     Almar is exceptionally skilled at advising the king with wisdom and foresight.
+                     His favorite place in the Efteling? He believes the entire universe holds beautiful spots to explore!
+                     He enjoys spending time with young Symbolicans eager to learn and grow.  
+                     Grand Magister Almar is tall and regal, with flowing silver robes adorned with stars and moons.
+                     His kind eyes shine with knowledge, and his long beard adds to his wise and mystical appearance."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x6100-almar-profiel.png" alt="Almar" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Fakir"
+                     data-species="The Fakir is 55 years old, truly, really! He is afraid that someone might steal his magic flute and use its powers for themselves.
+                     He lives in his beautiful palace, a perfect paradise. The Fakir loves enjoying a delicious Eastern meal.
+                     He can’t stand sentences that don’t rhyme or people who flatter him.
+                     The Fakir is excellent at solving problems—he just needs to stamp three times to fix anything!
+                     His favorite place in the Efteling is among his tulips, which he takes care of all by himself, without any helpers! He enjoys spending time with anyone who stamps three times and has problems to solve.  
+                     The Fakir is tall, with a flowing beard and colorful robes that match his lively spirit. His eyes sparkle with mischief, and his magical flute is always by his side."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-fakir-profiel.png" alt="Fakir" class="icon">
+                </div>
+            </div>
+            <div class="knop-wrapper">
+                <div class="knop villain" 
+                     data-name="Polle"
+                     data-species="Polle is 10 Quintyears old and lives in the workers' quarters of Palace Hartenhof.
+                     He is afraid of pests like rats but loves eating pancakes! He dislikes his red spike hair and pointy ears.
+                     Polle is very good at picking flavor-enhancing herbs. His favorite place in the Efteling is the herb gardens around the palace.
+                     He enjoys spending time with Pardoes and Pardijn, always finding fun adventures together.  
+                     Polle is small and energetic, with messy red hair that sticks out in all directions and large pointy ears.
+                     His curious eyes are always scanning for new herbs to add to his collection."
+                     data-gender="Male">
+                    <img src="./assets/images/story-page/characters/700x610-polle-profiel.png" alt="Polle" class="icon">
+                </div>
+            </div>
+        </div>
+
+            
+        </div>
+        <div class="next-knop-container">
+            <a href="#" id="go-to-verhaal" class="next-knop">Verder gaan</a>
+
+        </div>    
+    </section>
+
+
+    <!------------------------------- Story generation section -------------------------->
+
+    <!-- loading animation  -->
+    <section id="loading-screen">
+        <img src="./assets/images/magic-tree.png" alt="loading-image" class="bouncing-image">
+        <p>Magie wacht op jou!</p>
+    </section>
+    <!-- story output section -->
+    <section id="verhaal-section">
+        <div class="container">
+            <!-- Settings Button -->
+            <button class="settings-btn">
+            <img src="./assets/images/setting.png" alt="Settings">
+        </button>
+
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="./assets/images/logo svglogo.png" alt="Website Logo">
+            </div>
+
+            <!-- AI Generated Content -->
+            <div class="content" id="story-container">
+            </div>
+            <div class="character-section hidden">
+                <img src="./assets/images/character-image1.png" alt="Character" class="character-image">
+                <div class="talk-button">
+                    <button class="talk-btn">
+                        <img src="./assets/images/mic.png" alt="Microphone">
+                    </button>
+                </div>
+                <p id="mic-text">Praat hier</p>
+            </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/pwa.js"></script>
+</body>
+</html>

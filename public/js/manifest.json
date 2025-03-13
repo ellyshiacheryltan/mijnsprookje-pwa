@@ -1,0 +1,17 @@
+{
+    "name": "Mijn Sprookje",
+    "short_name": "Mijn Sprookje",
+    "theme_color": "#F6F2EA",
+    "background_color": "#F6F2EA",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "../assets/images/logo-pwa.png",
+            "sizes": "946x946",
+            "type": "image/png"
+        }
+    ]
+}
